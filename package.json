@@ -1,5 +1,5 @@
 {
-  "name": "platform",
+  "name": "next-tailwind-template",
   "private": true,
   "engines": {
     "node": ">=10",
@@ -21,18 +21,22 @@
     "test": "jest",
     "commit": "cz",
     "prepare": "husky install",
+    "test:e2e": "playwright test",
     "postbuild": "next-sitemap"
   },
   "dependencies": {
     "@heroicons/react": "1.0.6",
+    "@next/env": "13.1.1",
     "clsx": "1.2.1",
     "date-fns": "2.29.3",
     "dinero.js": "2.0.0-alpha.8",
+    "inquirer": "9.1.4",
     "next": "13.1.0",
     "next-seo": "5.15.0",
     "next-sitemap": "3.1.43",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "semantic-release": "19.0.5",
     "styled-components": "6.0.0-beta.2",
     "use-count-up": "3.0.1"
   },
@@ -41,6 +45,7 @@
     "@commitlint/config-conventional": "17.3.0",
     "@commitlint/cz-commitlint": "17.3.0",
     "@next/bundle-analyzer": "13.1.0",
+    "@playwright/test": "1.29.1",
     "@semantic-release/changelog": "6.0.2",
     "@semantic-release/git": "10.0.1",
     "@tailwindcss/aspect-ratio": "0.4.2",
